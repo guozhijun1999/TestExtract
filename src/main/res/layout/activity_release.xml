@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ba"
+    >
+
+    <ImageView
+        android:id="@+id/release_return"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_margin="@dimen/dp_10"
+        android:src="@mipmap/detail_left" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="发表话题"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/sp_18" />
+
+    <TextView
+        android:id="@+id/release_release"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/dp_10"
+        android:text="发布"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/sp_17" />
+
+    <View
+        android:id="@+id/release_view1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_below="@id/release_return"
+        android:background="@color/textColor"></View>
+
+    <TextView
+        android:id="@+id/release_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/release_view1"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:text="选择话题标签"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/release_view1"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_toRightOf="@id/release_select"
+        android:text="(合适的标签可以让更多的读者参与)"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/dp_12" />
+
+    <ImageView
+        android:id="@+id/release_tag"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/release_view1"
+        android:layout_margin="@dimen/dp_10"
+        android:src="@mipmap/release_right" />
+
+    <EditText
+        android:id="@+id/release_edit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_150"
+        android:layout_below="@id/release_select"
+        android:background="#F9F9F9"
+        android:gravity="top"
+        android:hint="输入话题内容"
+        android:padding="@dimen/dp_10" />
+
+    <LinearLayout
+        android:id="@+id/release_linear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_80"
+        android:layout_below="@id/release_edit"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/release_addimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_20"
+            android:src="@mipmap/release_add_img" />
+
+        <ImageView
+            android:id="@+id/release_addvideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_23"
+            android:src="@mipmap/release_add_video" />
+
+        <ImageView
+            android:id="@+id/release_addshare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_20"
+            android:src="@mipmap/release_add_share" />
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/release_adds"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/release_linear"-->
+        <!--android:background="#F9F9F9"-->
+        <!--android:orientation="vertical"-->
+        <!--android:visibility="visible">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/release_addimgs"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:src="@mipmap/release_add" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/dp_10"-->
+            <!--android:gravity="center"-->
+            <!--android:text="可选9张图片"-->
+            <!--android:textColor="@color/colorBlack"-->
+            <!--android:textSize="@dimen/dp_14" />-->
+    <!--</LinearLayout>-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fabu_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/release_linear"
+        ></android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

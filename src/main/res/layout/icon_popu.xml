@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/dp_12"
+
+    android:id="@+id/lin2"
+    android:minWidth="@dimen/dp_220"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="确认使用默认用户名"/>
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text='"user6979811435"?'/>
+
+
+    <TextView
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#5E5E5E"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:gravity="center"
+            android:layout_marginEnd="@dimen/dp_30"
+            android:text="使用"
+            android:textColor="#3A45F3"
+            android:textStyle="bold"
+            android:layout_marginRight="@dimen/dp_40" />
+
+        <TextView
+            android:id="@+id/shu2"
+            android:layout_width="0.1dp"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#5E5E5E" />
+
+        <TextView
+            android:id="@+id/ko"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:gravity="center"
+            android:text="修改"
+            android:layout_marginStart="@dimen/dp_30"
+            android:textColor="#3A45F3"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/dp_50" />
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

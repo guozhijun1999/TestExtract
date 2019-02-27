@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activeity.mine.AttentionActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:background="@color/colorred"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40">
+        <TextView
+            android:text="我的关注"
+            android:layout_gravity="center"
+            android:textSize="@dimen/dp_20"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_30" />
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/atttention_add"
+        android:text="+关注更多公众号"
+        android:gravity="center"
+        android:textSize="@dimen/dp_17"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="@dimen/dp_15"
+        android:id="@+id/rlv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

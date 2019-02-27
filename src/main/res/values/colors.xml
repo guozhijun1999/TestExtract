@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="red">#FF4081</color>
+    <color name="gray">#9f9797</color>
+    <color name="hint_color">#999999</color>
+    <color name="theme_color_blue">#3885af</color>
+    <color name="theme_color_gray">#a4a4a4</color>
+    <color name="theme_color_red">#d53d3c</color>
+    <color name="home_tab_textcolor">#DA2419</color>
+    <color name="home_toolbar_bgcolor">#D53D3C</color>
+    <color name="ba">#ffffff</color>
+    <color name="textColor">#808080</color>
+    <color name="colorBlack">#0d0d0d</color>
+    <color name="colorred">#e30817</color>
+    <color name="bg_focus">#a49e9e</color>
+    <color name="huise">#EFEFF0</color>
+    <color name="huise2">#E4E4E4</color>
+    <color name="hongse">#D53D3C</color>
+    <color name="bg_focus2">#dedada</color>
+    <color name="colorRed">#D53D3C</color>
+    <color name="layout">#FAFAFA</color>
+    <color name="sourceColor">#A4A4A4</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="white">#ffffff</color>
+    <item name="gray_holo_light" type="color">#ffd0d0d0</item>
+    <color name="yellow">#c0ffbd21</color>
+    <color name="red_f">#ff3c00</color>
+</resources>

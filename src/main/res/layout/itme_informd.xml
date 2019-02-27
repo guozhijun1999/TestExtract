@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp_20"
+    android:paddingEnd="@dimen/dp_6"
+    android:paddingStart="@dimen/dp_6"
+    android:paddingBottom="@dimen/dp_20"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/informd_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_18"
+        android:text="@string/app_name"
+        />
+    <ImageView
+        android:id="@+id/informd_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_150"
+        android:layout_marginTop="@dimen/dp_10"
+        android:src="@mipmap/ic_launcher_round"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/informd_top"
+            android:layout_width="@dimen/dp_42"
+            android:layout_height="@dimen/dp_20"
+            android:src="@mipmap/news_top2"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_6"
+            android:textSize="@dimen/sp_14"
+            android:textColor="#a4a4a4"
+            android:text="新华网"
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/informd_x"
+                android:layout_width="@dimen/dp_45"
+                android:layout_height="@dimen/dp_20"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/news_x2" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

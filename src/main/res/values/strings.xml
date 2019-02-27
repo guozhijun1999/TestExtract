@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TestNavigation</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="reprint">本文观点不代表第一通航立场，如有转载请联系原作者</string>
+</resources>

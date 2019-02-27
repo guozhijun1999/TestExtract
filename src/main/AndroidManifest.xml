@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.testnavigation">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.intent.category.DEFAULT" />
+    //写存储权限
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    //读存储权限
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    //相机权限
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- 推荐的权限 -->
+    <!-- 添加如下权限，以便使用更多的第三方SDK和更精准的统计数据 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".global.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activeity.MainActivity" />
+        <activity android:name=".base.SimpleActivity" />
+        <activity
+            android:name=".activeity.LandingActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activeity.IconActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5c43ddd5b465f564f4000ae6" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="guomr" />
+
+        <activity
+            android:name=".activeity.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activeity.CompileActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activeity.DetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activeity.topic.TopicDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activeity.topic.ReleaseActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activeity.mine.ModificationActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activeity.mine.CollectActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activeity.mine.AttentionActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activeity.mine.CommentActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activeity.mine.InformActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activeity.mine.SettingActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activeity.inform.SousuoActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activeity.topic.SousuoInfoactivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activeity.mine.MyTopicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activeity.mine.MoreFollowActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activeity.mine.SetSizeActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activeity.mine.AttentionActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/search_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorred"
+        android:minHeight="?android:actionBarSize">
+
+        <ImageView
+            android:id="@+id/back"
+            android:src="@mipmap/ic_back"
+            android:layout_width="@dimen/dp_15"
+            android:layout_height="@dimen/dp_20" />
+        <EditText
+            android:id="@+id/search_edit"
+            android:layout_width="@dimen/dp_280"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:background="@drawable/tool"
+            android:cursorVisible="true"
+            android:drawableLeft="@mipmap/inco"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="请输入关键词搜索"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/search_text_quxiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/dp_10"
+            android:text="搜索"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ba"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rlv1"
+            android:layout_width="@dimen/dp_120"
+            android:layout_height="match_parent" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rlv3"
+            android:layout_width="@dimen/dp_120"
+            android:visibility="gone"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="@dimen/dp_2"
+            android:layout_height="match_parent"
+            android:background="@color/theme_color_gray" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rlv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>

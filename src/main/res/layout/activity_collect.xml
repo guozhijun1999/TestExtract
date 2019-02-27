@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:orientation="horizontal"
+        android:background="#DB5959"
+        android:id="@+id/ll"
+        >
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_back"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_10"
+            />
+
+        <TextView
+            android:id="@+id/article"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="文章"
+            android:textSize="@dimen/sp_18"
+            android:background="#FFFFFF"
+            android:layout_marginTop="@dimen/dp_13"
+            android:layout_marginLeft="@dimen/dp_80"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20"
+            />
+
+        <TextView
+            android:id="@+id/topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="话题"
+            android:textSize="@dimen/sp_18"
+            android:background="#D53D3C"
+            android:layout_marginTop="@dimen/dp_13"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20"
+            />
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dp_18"
+            android:text="编辑"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="@dimen/dp_13"
+            android:layout_marginLeft="@dimen/dp_50"
+            />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_article"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ll"
+        android:visibility="visible"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_topic"
+        app:layout_constraintVertical_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ll"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:id="@+id/delect"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#FFFFFF"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="match_parent"
+            android:src="@mipmap/collect_delect"
+            android:layout_marginLeft="@dimen/dp_130"
+            />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除()"
+            android:textSize="@dimen/dp_20"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_5"
+            />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
